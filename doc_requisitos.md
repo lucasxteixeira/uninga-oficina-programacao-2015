@@ -17,8 +17,34 @@ Finalmente, alguns relatórios são importantes para o acompanhamento dos trabal
 
 ## Requisitos Não-Funcionais
 
+Desempenho – Sistema deve atender os requisitos mínimos de desempenho como, resposta as solicitações feitas no sistema devem ter no máximo 5 segundos, em caso de retorno de registro, no máximo 10 segundos. Devemos procurar saber quais as configurações da maquina em que o sistema irá rodar, apesar de ser sistema Web, as configurações podem afetar no desempenho.
+
+Confiabilidade/Disponibilidade – O sistema deverá estar disponível pelo menos entre o horário de funcionamento da clínica, já que os agendamentos serão realizados pelos funcionários da mesma, taxas de ocorrências de falhas de no máximo 5%.
+
+Controle da agenda – Sistema deve controlar para que uma consulta não sobreponha outra, retornando uma mensagem de alerta.
+
+Usabilidade/Interatividade – O sistema deve atender os requisitos mínimos de usabilidade como, tela com acesso rápido à todas as funções do sistema e opções de acesso intuitivas para minimização de treinamento e facilidade de acesso.
+
+Portabilidade – O sistema devera ser acessado completamente via Browser e funcionar de maneira eficiente nos principais navegadores de internet.
+
+Integridade /segurança – Apenas usuários com privilégios de acesso poderão fazer acessos, visualizar históricos e obter registros do sistema.
+
+Documentação necessária/Suporte – A documentação on-line incluirá um tutorial de como utilizar o sistema.
+
 
 ## Requisitos Funcionais
+
+Inclusão de pacientes – Tela da inclusão dos dados cadastrais do cliente, visualização, inclusão e remoção.
+
+Agendamento de consultas – deve cadastrar o dia em que o paciente deseja realizar a consulta, para o tal, o dia e a hora desejados devem estar vagos, assim que estiver cadastrado o sistema deverá automaticamente agendar a próxima consulta com a data repetida pelo período especificado pelo aluno.
+
+Visualização da agenda – o módulo visa gerenciar a agenda de cada aluno do consultório, com um sistema de visualização mensal (detalhada) com as descrições dos atendimentos.
+
+Inclusão de prontuário -  Inclusão, atualização e remoção de dados no prontuário do paciente, será um cadastro de histórico de todos as consultas realizadas, um relatório simples.
+
+Inclusão de Alunos = Tela da inclusão dos dados cadastrais dos alunos, visualização, inclusão e remoção.
+
+Acesso ao sistema – inicialmente uma tela de login, para o acesso as funcionalidades do sistema.
 
 
 ## Protótipo
