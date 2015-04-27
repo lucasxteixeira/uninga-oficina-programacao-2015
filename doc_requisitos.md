@@ -40,7 +40,7 @@ Agendamento de consultas – deve cadastrar o dia em que o paciente deseja reali
 
 Visualização da agenda – o módulo visa gerenciar a agenda de cada aluno do consultório, com um sistema de visualização mensal (detalhada) com as descrições dos atendimentos.
 
-Agendamento de reuniões - o sistema deve permitir a reserva de umas das 3 salas de reunião, exigindo para isso, dia e hora desejados. 
+Agendamento de reuniões - o sistema deve permitir a reserva de uma das 3 salas de reuniões, exigindo para isso, dia e hora desejados. 
 
 Inclusão de prontuário -  Inclusão, atualização e remoção de dados no prontuário do paciente, será um cadastro de histórico de todos as consultas realizadas, um relatório simples.
 
