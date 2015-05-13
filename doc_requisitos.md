@@ -37,6 +37,8 @@ Requisitos de entrega: deverá existir uma rotina de geração de um relatório 
 
 Requisitos de interoperabilidade: O sistema deverá se comunicar com o banco de dados, para a persistencia dos dados do sistema.
 
+Privacidade - Usuários não poderão acessar informações de outros usuários sem que estejam autenticados no sistema. Outras regras também serão impostas de acordo com a hierarquia dos usuários dentro do sistema. Por exemplo, secretária não pode ter acesso os dados da ficha de atendimento do paciente.
+
 ## Requisitos Funcionais
 
 Inclusão de pacientes – Tela da inclusão dos dados cadastrais do cliente, visualização, inclusão e remoção.
