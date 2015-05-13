@@ -57,7 +57,8 @@ Permissões de Usuários por Perfil - Serão criadas três categorias de usuári
 
 Gerenciamento do calendário - alterar periodo de funcionamento da clinica, bem como adicionar feriados e recessos.
 
-
+Impressão de comprovante - O sistema deve permitir a impressão de um comprovante de consulta, contendo o nome do
+cliente, data e horário da consulta, nome do psicologo responsável.
 
 
 
