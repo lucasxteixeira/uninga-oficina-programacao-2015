@@ -57,6 +57,8 @@ Permissões de Usuários por Perfil - Serão criadas três categorias de usuári
 
 Gerenciamento do calendário - alterar periodo de funcionamento da clinica, bem como adicionar feriados e recessos.
 
+Consulta de historico de paciente = O sistema deve permitir ao usuario a consulta do historico do atendimento so paciente.
+
 
 
 
