@@ -1,0 +1,82 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-4">
+        <h2>Paciente</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="#/organizacao">Paciente</a>
+            </li>
+            <li class="active">
+                <strong id="listOrgSubheagerTile">listagem</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-sm-8">
+        <div class="title-action">
+            <!--<a href="#" class="btn btn-primary">This is action area</a>-->
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="wrapper wrapper-content animated fadeInUp">
+
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5 id="listOrgTitle" style="display:block;">Todas os Pacientes cadastrados</h5>
+                    <h5 id="cadOrgTitle" style="display:none;">Cadastrar novo paciente</h5>
+                    <div class="ibox-tools">
+                        <a href="" class="btn btn-primary btn-xs" onclick="org.showCadastro()" id="btCadOrg" style="display:block;">Cadastrar</a>
+                        <a href="" class="btn btn-primary btn-xs" onclick="org.saveCadastro()" id="btCadOrgSave" style="display:none;">Salvar</a>
+                    </div>
+					<div class="ibox-tools">
+                        <a href="" class="btn btn-default btn-xs btn-white" onclick="org.cancelCadastro()" id="btCadOrgCancel" style="display:none;">Cancelar</a>
+                    </div>
+                </div>
+
+				<!-- @ListOrg -->
+                <div class="ibox-content" id="listOrg"  style="display:block;">
+                    <div class="row m-b-sm m-t-sm">
+                        <div class="col-md-1">
+                            <button type="button" id="loading-example-btn" class="btn btn-white btn-sm" >
+                                <i class="fa fa-refresh"></i> Atualizar
+                            </button>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="input-group">
+                                <input type="text" placeholder="Pesquisar" class="input-sm form-control" id="org_pesq" onkeypress="org.pesquisar()">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-sm btn-primary" onclick="org.pesquisar()"> Buscar!</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-list">
+
+                        <table class="table table-hover">
+                            <tbody id="listagemOrg">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+				
+				<!-- @cadOrg -->
+				<div id="cadOrg" style="display:none;">
+					<div class="ibox-content">
+						<form method="get" class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-2 control-label">Razão</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="org_razao" required="">
+								</div>
+							</div>
+							<div class="hr-line-dashed"></div>
+						</form>
+                     </div>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
