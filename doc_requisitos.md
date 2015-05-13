@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Este trabalho consiste no desenvolvimento de um sistema para gestão da Clínica Psicólogicga da Uningá que padronize e facilite o controle das atividades realizadas, visando um melhor controle administrativo e mais agilidade na prestação dos serviços aos pacientes. Além disso, busca fornecer maior segurança e confiabilidade no tratamento das informações.
+Este trabalho consiste no desenvolvimento de um sistema para gestão da Clínica Psicólogica da Uningá que padronize e facilite o controle das atividades realizadas, visando um melhor controle administrativo e mais agilidade na prestação dos serviços aos pacientes. Além disso, busca fornecer maior segurança e confiabilidade no tratamento das informações.
 
 ## Descrição do Sistema
 
