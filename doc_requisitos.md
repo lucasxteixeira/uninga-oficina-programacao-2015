@@ -35,6 +35,8 @@ Requisitos éticos: o sistema trabalhará de uma forma que mantenha em sigilo qu
 
 Requisitos de entrega: deverá existir uma rotina de geração de um relatório de acompanhamento semanal, rotina esta parametrizável no sistema.
 
+Requisitos de interoperabilidade: O sistema deverá se comunicar com o banco de dados, para a persistencia dos dados do sistema.
+
 ## Requisitos Funcionais
 
 Inclusão de pacientes – Tela da inclusão dos dados cadastrais do cliente, visualização, inclusão e remoção.
