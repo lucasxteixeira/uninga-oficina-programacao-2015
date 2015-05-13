@@ -55,4 +55,9 @@ Acesso ao sistema – inicialmente uma tela de login, para o acesso as funcional
 
 Permissões de Usuários por Perfil - Serão criadas três categorias de usuários, com suas respectivas permissões, dentre as categorias de perfil estão: Administrador, Secretária e Aluno.
 
+Gerenciamento do calendario - alterar periodo de funcionamento, bem como adicionar feriados e recessos.
+
+
+
+
 ## Protótipo
