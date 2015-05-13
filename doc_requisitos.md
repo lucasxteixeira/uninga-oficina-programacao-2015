@@ -31,6 +31,9 @@ Integridade /segurança – Apenas usuários com privilégios de acesso poderão
 
 Documentação necessária/Suporte – A documentação on-line incluirá um tutorial de como utilizar o sistema.
 
+Requisitos éticos: o sistema trabalhará de uma forma que mantenha em sigilo quaisquer dados de cunho privativo, como informações dos pacientes em geral.
+
+Requisitos de entrega: deverá existir uma rotina de geração de um relatório de acompanhamento semanal, rotina esta parametrizável no sistema.
 
 ## Requisitos Funcionais
 
@@ -48,5 +51,6 @@ Inclusão de Alunos = Tela da inclusão dos dados cadastrais dos alunos, visuali
 
 Acesso ao sistema – inicialmente uma tela de login, para o acesso as funcionalidades do sistema.
 
+Permissões de Perfis - Serão criadas três categorias de usuários, com suas respectivas permissões, dentre as categorias de perfil estão: Administrador, Secretária e Aluno.
 
 ## Protótipo
