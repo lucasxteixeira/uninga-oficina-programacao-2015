@@ -9,10 +9,11 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Pacientes</title>
+    <title>Clínica</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet">
@@ -51,28 +52,36 @@
       <div class="row">
         <div class="col-sm-2 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li><a href="clinica.htm">Clínica</a></li>
+            <li class="active"><a href="clinica.htm">Clínica <span class="sr-only">(current)</span></a></li>
             <li><a href="reuniao.htm">Reuniões </a></li>
           </ul>
           <ul class="nav nav-sidebar">
             <li><a href="atendimentos.htm">Atendimentos</a></li>
             <li><a href="salasClinicas.htm">Salas Clínicas </a></li>
             <li><a href="salasReuniao.htm">Salas de Reunião</a></li>
-            <li class="active"><a href="pacientes.htm">Pacientes <span class="sr-only">(current)</span></a></li>
+            <li><a href="pacientes.htm">Pacientes</a></li>
             <li><a href="prestadores.htm">Prestadores</a></li>
             <li><a href="usuarios.htm">Usuários</a></li>
             <li><a href="#">Parâmetros gerais</a></li>
             <li><a href="#">Relatórios</a></li>
           </ul>
         </div>
+        </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <h1 class="page-header">
-                Pacientes
-                <p class="crud-panel">
-                    <button type="button" class="btn btn-primary">Inserir</button>
-                    <button type="button" class="btn btn-warning">Editar</button>
-                    <button type="button" class="btn btn-danger">Excluir</button>
-                </p>
+                Clínica
+                <div id="calendar" class='col-sm-2'>
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <div class='input-group date' id='datetimepicker'>
+                                <input type='text' class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </h1>
             <div class="table-responsive">
                 <table class="table table-hover">
@@ -83,9 +92,11 @@
                                   <input type="checkbox" name="checkAll">
                               </form>
                           </th>
-                          <th class="col-xs-6">Nome</th>
-                          <th class="col-xs-3">CPF</th>
-                          <th class="col-xs-2">Telefone</th>
+                          <th class="col-xs-1">Horário</th>
+                          <th class="col-xs-1">Duração</th>
+                          <th class="col-xs-1">Sala</th>
+                          <th class="col-xs-4">Paciente</th>
+                          <th class="col-xs-4">Prestador</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -95,9 +106,11 @@
                                   <input type="checkbox" name="check1">
                               </form>
                           </td>
-                          <td>Pedro Alvares Cabral</td>
-                          <td>209.426.272-37</td>
-                          <td>(44)3065-7070</td>
+                          <th scope="row">08:00</th>
+                          <td>1hr</td>
+                          <td>01</td>
+                          <td>Pedro Alvares Cabral - (44)3065-7070</td>
+                          <td>Dom Pedro II - (44)9980-7075</td>
                         </tr>
                         <tr>
                           <td>
@@ -106,18 +119,22 @@
                                   <input type="checkbox" name="check2">
                               </form>
                           </td>
-                          <td>Jeferson Belgamazzi</td>
-                          <td>874.627.878-81</td>
-                          <td>(44)3090-1070</td>
+                          <th scope="row">09:00</th>
+                          <td>1hr</td>
+                          <td>01</td>
+                          <td>Jeferson Belgamazzi - (44)3090-1070</td>
+                          <td>Victor Bellini - (44)7680-7985</td>
                         </tr>
                            <td>
                               <form>
                                   <input type="checkbox" name="check3">
                               </form>
                           </td>
-                          <td>Jean Carlos Cavalcante</td>
-                          <td>476.228.127-14</td>
-                          <td>(44)3225-7070</td>
+                          <th scope="row">10:00</th>
+                          <td>1hr</td>
+                          <td>01</td>
+                          <td>Jean Carlos Cavalcante - (44)3225-7070</td>
+                          <td>Charles Vargas - (44)9870-2552</td>
                         </tr>
                       </tbody>
                     </table>
@@ -131,7 +148,22 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/collapse.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(function () {
+                $('#datetimepicker').datetimepicker({
+                    locale: 'pt',
+                    defaultDate: Date.now(),
+                    format: 'DD/MM/YYYY'
+                });
+            });
+        });
+    </script>
   </body>
 </html>

@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Pacientes</title>
+    <title>Salas Clínicas</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -56,18 +56,19 @@
           </ul>
           <ul class="nav nav-sidebar">
             <li><a href="atendimentos.htm">Atendimentos</a></li>
-            <li><a href="salasClinicas.htm">Salas Clínicas </a></li>
+            <li class="active"><a href="salasClinicas.htm">Salas Clínicas <span class="sr-only">(current)</span></a></li>
             <li><a href="salasReuniao.htm">Salas de Reunião</a></li>
-            <li class="active"><a href="pacientes.htm">Pacientes <span class="sr-only">(current)</span></a></li>
+            <li><a href="pacientes.htm">Pacientes</a></li>
             <li><a href="prestadores.htm">Prestadores</a></li>
             <li><a href="usuarios.htm">Usuários</a></li>
             <li><a href="#">Parâmetros gerais</a></li>
             <li><a href="#">Relatórios</a></li>
           </ul>
         </div>
+        </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <h1 class="page-header">
-                Pacientes
+                Salas Clínicas
                 <p class="crud-panel">
                     <button type="button" class="btn btn-primary">Inserir</button>
                     <button type="button" class="btn btn-warning">Editar</button>
@@ -83,9 +84,8 @@
                                   <input type="checkbox" name="checkAll">
                               </form>
                           </th>
-                          <th class="col-xs-6">Nome</th>
-                          <th class="col-xs-3">CPF</th>
-                          <th class="col-xs-2">Telefone</th>
+                          <th class="col-xs-1">Sala</th>
+                          <th class="col-xs-10">Descrição</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -95,9 +95,8 @@
                                   <input type="checkbox" name="check1">
                               </form>
                           </td>
-                          <td>Pedro Alvares Cabral</td>
-                          <td>209.426.272-37</td>
-                          <td>(44)3065-7070</td>
+                          <th scope="row">01</th>
+                          <td>Clínica N°01</td>
                         </tr>
                         <tr>
                           <td>
@@ -106,18 +105,16 @@
                                   <input type="checkbox" name="check2">
                               </form>
                           </td>
-                          <td>Jeferson Belgamazzi</td>
-                          <td>874.627.878-81</td>
-                          <td>(44)3090-1070</td>
+                          <th scope="row">02</th>
+                          <td>Clínica N°02</td>
                         </tr>
                            <td>
                               <form>
                                   <input type="checkbox" name="check3">
                               </form>
                           </td>
-                          <td>Jean Carlos Cavalcante</td>
-                          <td>476.228.127-14</td>
-                          <td>(44)3225-7070</td>
+                          <th scope="row">03</th>
+                          <td>Clínica N°03</td>
                         </tr>
                       </tbody>
                     </table>

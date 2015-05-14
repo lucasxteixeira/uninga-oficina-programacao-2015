@@ -9,10 +9,11 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Salas de Reunião</title>
+    <title>Reuniões</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet">
@@ -51,11 +52,13 @@
       <div class="row">
         <div class="col-sm-2 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li><a href="atendimentos.htm">Atendimentos</a></li>
-            <li><a href="clinicas.htm">Salas Clínicas </a></li>
-            <li class="active"><a href="reuniao.htm">Salas de Reunião <span class="sr-only">(current)</span></a></li>
+            <li><a href="clinica.htm">Clínica</a></li>
+            <li class="active"><a href="reuniao.htm">Reuniões <span class="sr-only">(current)</span></a></li>
           </ul>
           <ul class="nav nav-sidebar">
+            <li><a href="atendimentos.htm">Atendimentos</a></li>
+            <li><a href="salasClinicas.htm">Salas Clínicas </a></li>
+            <li><a href="salasReuniao.htm">Salas de Reunião</a></li>
             <li><a href="pacientes.htm">Pacientes</a></li>
             <li><a href="prestadores.htm">Prestadores</a></li>
             <li><a href="usuarios.htm">Usuários</a></li>
@@ -63,14 +66,22 @@
             <li><a href="#">Relatórios</a></li>
           </ul>
         </div>
+        </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <h1 class="page-header">
-                Salas de Reunião
-                <p class="crud-panel">
-                    <button type="button" class="btn btn-primary">Inserir</button>
-                    <button type="button" class="btn btn-warning">Editar</button>
-                    <button type="button" class="btn btn-danger">Excluir</button>
-                </p>
+                Reuniões
+                <div id="calendar" class='col-sm-2'>
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <div class='input-group date' id='datetimepicker'>
+                                <input type='text' class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </h1>
             <div class="table-responsive">
                 <table class="table table-hover">
@@ -81,8 +92,10 @@
                                   <input type="checkbox" name="checkAll">
                               </form>
                           </th>
+                          <th class="col-xs-1">Horário</th>
+                          <th class="col-xs-1">Duração</th>
                           <th class="col-xs-1">Sala</th>
-                          <th class="col-xs-10">Descrição</th>
+                          <th class="col-xs-4">Responsável</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -92,8 +105,10 @@
                                   <input type="checkbox" name="check1">
                               </form>
                           </td>
-                          <th scope="row">01</th>
-                          <td>Reunião N°01</td>
+                          <th scope="row">08:00</th>
+                          <td>1hr</td>
+                          <td>01</td>
+                          <td>Pedro Alvares Cabral - (44)3065-7070</td>
                         </tr>
                         <tr>
                           <td>
@@ -102,16 +117,20 @@
                                   <input type="checkbox" name="check2">
                               </form>
                           </td>
-                          <th scope="row">02</th>
-                          <td>Reunião N°02</td>
+                          <th scope="row">09:00</th>
+                          <td>1hr</td>
+                          <td>01</td>
+                          <td>Jeferson Belgamazzi - (44)3090-1070</td>
                         </tr>
                            <td>
                               <form>
                                   <input type="checkbox" name="check3">
                               </form>
                           </td>
-                          <th scope="row">03</th>
-                          <td>Reunião N°03</td>
+                          <th scope="row">10:00</th>
+                          <td>1hr</td>
+                          <td>01</td>
+                          <td>Jean Carlos Cavalcante - (44)3225-7070</td>
                         </tr>
                       </tbody>
                     </table>
@@ -125,7 +144,22 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/collapse.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(function () {
+                $('#datetimepicker').datetimepicker({
+                    locale: 'pt',
+                    defaultDate: Date.now(),
+                    format: 'DD/MM/YYYY'
+                });
+            });
+        });
+    </script>
   </body>
 </html>
