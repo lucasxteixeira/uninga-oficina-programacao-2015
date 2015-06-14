@@ -46,6 +46,32 @@ Inclusão de pacientes:
 - Idade;
 - Telefone 1, e/ou 2;
 
+Inclusão de professor:
+- Nome Completo;
+- CPF;
+- Idade;
+- Telefone 1, e/ou 2;
+- Registro do docente;
+
+Inclusão de Sala de atendimento:
+- Número da Sala
+- Bloco
+
+Nova Consulta:
+- Aluno;
+- Horário
+- Dia
+- Paciente
+- Flag de definição sobre Atendimento serial ou Consulta Única
+- obs: (Horários devem estar disponíveis)
+
+Nova Reunião
+- Tema;
+- Alunos envolvidos
+- Dia
+- Horário
+- Professores envolvidos (opcional)
+
 Inclusão de perfil Aluno:
 - Nome Completo;
 - CPF;
@@ -53,6 +79,7 @@ Inclusão de perfil Aluno:
 - Registro Acadêmico;
 - Telefone 1, e/ou 2;
 - Email;
+- Log in e senha;
 
 Inclusão de perfil Secretária:
 - Nome Completo;
@@ -60,6 +87,7 @@ Inclusão de perfil Secretária:
 - Idade;
 - Telefone 1, e/ou 2;
 - Email;
+- Log in e senha;
 
 Inclusão de perfil Administrador:
 - Nome Completo;
@@ -68,21 +96,28 @@ Inclusão de perfil Administrador:
 - Registro do Docente;
 - Telefone 1, e/ou 2;
 - Email;
-
-Agendamento de consultas – deve cadastrar o dia em que o paciente deseja realizar a consulta, para o tal, o dia e a hora desejados devem estar vagos, assim que estiver cadastrado o sistema deverá automaticamente agendar a próxima consulta com a data repetida pelo período especificado pelo aluno.
-
-Visualização da agenda – o módulo visa gerenciar a agenda de cada aluno do consultório, com um sistema de visualização mensal (detalhada) com as descrições dos atendimentos.
-
-Agendamento de reuniões - o sistema deve permitir a reserva de uma das 3 salas de reuniões, exigindo para isso, dia e hora desejados. 
-
-Inclusão de prontuário -  Inclusão, atualização e remoção de dados no prontuário do paciente, será um cadastro de histórico de todos as consultas realizadas, um relatório simples.
-
-Inclusão de Alunos = Tela da inclusão dos dados cadastrais dos alunos, visualização, inclusão e remoção.
-
-Acesso ao sistema – inicialmente uma tela de login, para o acesso as funcionalidades do sistema.
+- Log in e senha;
 
 
-Permissões de Usuários por Perfil - Serão criadas três categorias de usuários, com suas respectivas permissões, dentre as categorias de perfil estão: Administrador, Secretária e Aluno.
+
+Agendamento de consultas (Perfil responsável: Secretária) – deve cadastrar o dia em que o paciente deseja realizar a consulta, para o tal, o dia e a hora desejados devem estar vagos.
+
+
+Visualização da agenda  – o módulo visa gerenciar a agenda de cada aluno do consultório, com um sistema de visualização mensal (detalhada) com as descrições e informações dos atendimentos.
+
+
+Agendamento de reuniões (Perfis responsáveis: Secretária e Administrador) - o sistema deve permitir a reserva de uma das 3 salas de reuniões, exigindo para isso, dia e hora desejados professores/alunos envolvidos e tema da reunião. 
+
+
+Inclusão de prontuário (Perfil responsável: Aluno) -  Inclusão, atualização e remoção de dados no prontuário do paciente, será um cadastro de histórico de todos as consultas realizadas, um relatório simples.
+
+
+Acesso ao sistema – inicialmente uma tela de login, para o acesso as funcionalidades do sistema. 
+o acesso ao sistema será feito por um nome de log in e senha, o sistema será aberto de acordo com o perfil.
+
+
+Permissões de Usuários por Perfil 
+- Serão criadas três categorias de usuários, com suas respectivas permissões, dentre as categorias de perfil estão: Administrador, Secretária e Aluno.
 
 Administrador: Este é o perfil do professor Alexandre
 A criação do perfil de Administrador é feita no primeiro momento em que o sistema é aberto pela primeira vez.
@@ -96,28 +131,37 @@ A criação do perfil de Administrador é feita no primeiro momento em que o sis
 - Este Perfil não tem restrições de permissão, é capaz de controlar todo o sistema e tem as permissões de todos os perfis. (Secretária, Professor e Aluno).
 
 Secretária: Este é o perfil o Responsável por marcar os horários das consultas e imprimir o comprovante, cadastrar pacientes no sistema, marcar reuniões.
-- Possui um Bloco de anotações
-- Imprime comprovante da consulta
-- Edita perfil Secretária
-- Criar consulta
-- Editar Consulta (Alterar Aluno Responsável, Horário, paciente e etc)
-- Remover Consulta
+- Possui um Bloco de anotações;
+- Imprime comprovante da consulta;
+- Edita perfil Secretária;
+- Criar consulta;
+- Editar Consulta (Alterar Aluno Responsável, Horário, paciente e etc);
+- Remover Consulta;
 - Edita informações da Reunião (Tema, Horário, Alunos envolvidos, Resultados e etc);
 - Cancela Reunião;
 - Cadastra Paciente;
 - Altera informações do Paciente;
-- Exclui Paciente
+- Exclui Paciente;
+- Cadastra Professor;
+- Altera informações do Professor;
+- Exclui Professor;
+- Gerencia o calendário;
+- Cadastra Sala de atendimento;
 
 Aluno: 
 - Edita informações do perfil Aluno;
 - Preenche informações sobre a consulta;
-- Solicita alteração de horário da consulta informando o motivo.
+- Solicita alteração de horário da consulta informando o motivo;
+- Visualiza calendário;
+- Visualiza suas consultas feitas e as futuras;
+- Preenche prontuário do paciente;
 
 
-Gerenciamento do calendário - alterar periodo de funcionamento da clinica, bem como adicionar feriados e recessos.
 
-Impressão de comprovante - O sistema deve permitir a impressão de um comprovante de consulta, contendo o nome do
-cliente, data e horário da consulta, nome do psicologo responsável.
+Gerenciamento do calendário (Perfis responsáveis: Administrador e Secretária) - alterar periodo de funcionamento da clinica, bem como adicionar feriados e recessos.
+
+
+Impressão de comprovante (Perfil responsável: Secretária) - O sistema deve permitir a impressão de um comprovante de consulta ao final da consulta, contendo o nome do Paciente, data e horário da consulta, nome do psicologo responsável (Aluno), e anotações sobre a consulta.
 
 
 
