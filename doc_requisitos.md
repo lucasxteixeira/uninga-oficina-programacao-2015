@@ -80,7 +80,8 @@ Inclusão de prontuário -  Inclusão, atualização e remoção de dados no pro
 Inclusão de Alunos = Tela da inclusão dos dados cadastrais dos alunos, visualização, inclusão e remoção.
 
 Acesso ao sistema – inicialmente uma tela de login, para o acesso as funcionalidades do sistema.
-------------------------------------------------------------------------------------------------------------------------
+
+
 Permissões de Usuários por Perfil - Serão criadas três categorias de usuários, com suas respectivas permissões, dentre as categorias de perfil estão: Administrador, Secretária e Aluno.
 
 Administrador: Este é o perfil do professor Alexandre
@@ -111,7 +112,7 @@ Aluno:
 - Edita informações do perfil Aluno;
 - Preenche informações sobre a consulta;
 - Solicita alteração de horário da consulta informando o motivo.
-------------------------------------------------------------------------------------------------------------------------
+
 
 Gerenciamento do calendário - alterar periodo de funcionamento da clinica, bem como adicionar feriados e recessos.
 
