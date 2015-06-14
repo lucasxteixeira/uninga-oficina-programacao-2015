@@ -38,8 +38,36 @@ Requisitos de entrega: deverá existir uma rotina de geração de um relatório 
 Requisitos de interoperabilidade: O sistema deverá se comunicar com o banco de dados, para a persistencia dos dados do sistema.
 
 ## Requisitos Funcionais
+Telas de cadastro
 
-Inclusão de pacientes – Tela da inclusão dos dados cadastrais do cliente, visualização, inclusão e remoção.
+Inclusão de pacientes:
+- Nome Completo;
+- CPF;
+- Idade;
+- Telefone 1, e/ou 2;
+
+Inclusão de perfil Aluno:
+- Nome Completo;
+- CPF;
+- Idade;
+- Registro Acadêmico;
+- Telefone 1, e/ou 2;
+- Email;
+
+Inclusão de perfil Secretária:
+- Nome Completo;
+- CPF;
+- Idade;
+- Telefone 1, e/ou 2;
+- Email;
+
+Inclusão de perfil Administrador:
+- Nome Completo;
+- CPF;
+- Idade;
+- Registro do Docente;
+- Telefone 1, e/ou 2;
+- Email;
 
 Agendamento de consultas – deve cadastrar o dia em que o paciente deseja realizar a consulta, para o tal, o dia e a hora desejados devem estar vagos, assim que estiver cadastrado o sistema deverá automaticamente agendar a próxima consulta com a data repetida pelo período especificado pelo aluno.
 
@@ -52,8 +80,38 @@ Inclusão de prontuário -  Inclusão, atualização e remoção de dados no pro
 Inclusão de Alunos = Tela da inclusão dos dados cadastrais dos alunos, visualização, inclusão e remoção.
 
 Acesso ao sistema – inicialmente uma tela de login, para o acesso as funcionalidades do sistema.
-
+------------------------------------------------------------------------------------------------------------------------
 Permissões de Usuários por Perfil - Serão criadas três categorias de usuários, com suas respectivas permissões, dentre as categorias de perfil estão: Administrador, Secretária e Aluno.
+
+Administrador: Este é o perfil do professor Alexandre
+A criação do perfil de Administrador é feita no primeiro momento em que o sistema é aberto pela primeira vez.
+- Edita informações do Administrador 
+- Inclui novo Aluno e Secretária;
+- Edita todas as informações cadastrais de Aluno e Secretária;
+- Remove Aluno e Secretária;
+- Cria Reunião;
+- Edita informações da Reunião (Tema, Horário, Alunos envolvidos, Resultados e etc);
+- Cancela Reunião;
+- Este Perfil não tem restrições de permissão, é capaz de controlar todo o sistema e tem as permissões de todos os perfis. (Secretária, Professor e Aluno).
+
+Secretária: Este é o perfil o Responsável por marcar os horários das consultas e imprimir o comprovante, cadastrar pacientes no sistema, marcar reuniões.
+- Possui um Bloco de anotações
+- Imprime comprovante da consulta
+- Edita perfil Secretária
+- Criar consulta
+- Editar Consulta (Alterar Aluno Responsável, Horário, paciente e etc)
+- Remover Consulta
+- Edita informações da Reunião (Tema, Horário, Alunos envolvidos, Resultados e etc);
+- Cancela Reunião;
+- Cadastra Paciente;
+- Altera informações do Paciente;
+- Exclui Paciente
+
+Aluno: 
+- Edita informações do perfil Aluno;
+- Preenche informações sobre a consulta;
+- Solicita alteração de horário da consulta informando o motivo.
+------------------------------------------------------------------------------------------------------------------------
 
 Gerenciamento do calendário - alterar periodo de funcionamento da clinica, bem como adicionar feriados e recessos.
 
