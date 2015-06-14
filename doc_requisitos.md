@@ -57,6 +57,10 @@ Inclusão de Sala de atendimento:
 - Número da Sala;
 - Bloco;
 
+Inclusão de Evento:
+- Nome do Evento
+- Professor/Orientador - responsável;
+
 Nova Consulta:
 - Aluno;
 - Horário;
