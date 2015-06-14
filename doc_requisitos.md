@@ -107,6 +107,7 @@ Visualização da agenda  – o módulo visa gerenciar a agenda de cada aluno do
 
 
 Agendamento de reuniões (Perfis responsáveis: Secretária e Administrador) - o sistema deve permitir a reserva de uma das 3 salas de reuniões, exigindo para isso, dia e hora desejados professores/alunos envolvidos e tema da reunião. 
+As reuniões serão marcadas fazendo a verificação dos horários disponíveis das salas de atendimento e dos alunos envolvidos.
 
 
 Inclusão de prontuário (Perfil responsável: Aluno) -  Inclusão, atualização e remoção de dados no prontuário do paciente, será um cadastro de histórico de todos as consultas realizadas, um relatório simples.
@@ -163,6 +164,8 @@ Gerenciamento do calendário (Perfis responsáveis: Administrador e Secretária)
 
 Impressão de comprovante (Perfil responsável: Secretária) - O sistema deve permitir a impressão de um comprovante de consulta ao final da consulta, contendo o nome do Paciente, data e horário da consulta, nome do psicologo responsável (Aluno), e anotações sobre a consulta.
 
+
+Remarcar Consulta (Perfil responsável - Secretária) - O paciente e o podem solicitar alteração de horário da consulta informando o motivo.
 
 
 ## Protótipo
