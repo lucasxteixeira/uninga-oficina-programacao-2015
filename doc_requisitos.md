@@ -54,23 +54,24 @@ Inclusão de professor:
 - Registro do docente;
 
 Inclusão de Sala de atendimento:
-- Número da Sala
-- Bloco
+- Número da Sala;
+- Bloco;
 
 Nova Consulta:
 - Aluno;
-- Horário
-- Dia
-- Paciente
-- Flag de definição sobre Atendimento serial ou Consulta Única
-- obs: (Horários devem estar disponíveis)
+- Horário;
+- Dia;
+- Paciente;
+- Evento (Atendimento que o paciente necessita (motivo da consulta/Tipo de atendimento));
+- Flag de definição sobre Atendimento serial ou Consulta Única;
+- obs: (Horários devem estar disponíveis);
 
 Nova Reunião
 - Tema;
-- Alunos envolvidos
-- Dia
-- Horário
-- Professores envolvidos (opcional)
+- Alunos envolvidos;
+- Dia;
+- Horário;
+- Professores envolvidos (opcional);
 
 Inclusão de perfil Aluno:
 - Nome Completo;
@@ -122,7 +123,7 @@ Permissões de Usuários por Perfil
 
 Administrador: Este é o perfil do professor Alexandre
 A criação do perfil de Administrador é feita no primeiro momento em que o sistema é aberto pela primeira vez.
-- Edita informações do Administrador 
+- Edita informações do Administrador;
 - Inclui novo Aluno e Secretária;
 - Edita todas as informações cadastrais de Aluno e Secretária;
 - Remove Aluno e Secretária;
@@ -148,6 +149,7 @@ Secretária: Este é o perfil o Responsável por marcar os horários das consult
 - Exclui Professor;
 - Gerencia o calendário;
 - Cadastra Sala de atendimento;
+- Inclui, edita e exclui os Eventos (Motivo da consulta);
 
 Aluno: 
 - Edita informações do perfil Aluno;
@@ -167,5 +169,5 @@ Impressão de comprovante (Perfil responsável: Secretária) - O sistema deve pe
 
 Remarcar Consulta (Perfil responsável - Secretária) - O paciente e o podem solicitar alteração de horário da consulta informando o motivo.
 
-
+Incluir tipos de atendimento/Motivo - Eventos (Perfil responsável - Secretária): Serão adicionados no sistema os motivos das consultas, para que haja uma organização nos eventos que a consulta disponibiliza.
 ## Protótipo
