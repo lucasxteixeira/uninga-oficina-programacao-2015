@@ -1,0 +1,10 @@
+#remoteForm {
+    border-top: 1px solid #dddddd;
+    padding-top: 10px;
+}
+#searchIcon {
+    float: right;
+    z-index: 1;
+    margin-top: -25px;
+    margin-right: 10px;
+}

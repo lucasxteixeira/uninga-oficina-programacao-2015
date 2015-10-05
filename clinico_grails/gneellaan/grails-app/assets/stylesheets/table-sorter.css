@@ -1,0 +1,33 @@
+.glyphicon-chevron-up, .glyphicon-chevron-down{
+    display: none;
+    margin-left: 5px;
+}
+.table-responsive {
+    border: none;
+}
+table {
+    border-bottom: none !important;
+}
+table thead tr th{
+    border: none !important;
+}
+table thead tr th{
+    padding: 18px !important;
+}
+th.headerSortUp > i { 
+    display: inline;
+}
+th.headerSortUp {
+    font-weight: bold !important;
+}
+th.headerSortDown > span { 
+    display: inline;
+}
+th.headerSortDown {
+    font-weight: bold !important;
+}
+th.header { 
+    cursor: pointer; 
+    font-weight: 100; 
+    padding: 6px !important; 
+} 
